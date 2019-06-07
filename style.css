@@ -13,22 +13,6 @@ body {
   padding-top: 50px;
   grid-gap: 1px; }
 
-.calendar > div {
-  display: grid;
-  height: 100px;
-  background-color: #eee0;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  border: 1px solid black;
-  font-family: Arial, sans-serif;
-  font-size: 30px;
-  transition: all .5s  ease-in-out; }
-  .calendar > div:hover {
-    cursor: pointer;
-    background-color: pink;
-    margin-top: -20px; }
-
 .calendar-28 .day:nth-child(1):after {
   content: "1"; }
 
@@ -112,6 +96,20 @@ body {
 
 .calendar-28 .day:nth-child(28):after {
   content: "28"; }
+
+.calendar-28 > div:nth-child(-n+28) {
+  display: grid;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  transition: all .5s  ease-in-out;
+  border: 1px solid black; }
+  .calendar-28 > div:nth-child(-n+28):hover {
+    cursor: pointer;
+    background-color: pink;
+    margin-top: -20px; }
 
 .calendar-29 .day:nth-child(1):after {
   content: "1"; }
@@ -199,6 +197,20 @@ body {
 
 .calendar-29 .day:nth-child(29):after {
   content: "29"; }
+
+.calendar-29 > div:nth-child(-n+29) {
+  display: grid;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  transition: all .5s  ease-in-out;
+  border: 1px solid black; }
+  .calendar-29 > div:nth-child(-n+29):hover {
+    cursor: pointer;
+    background-color: pink;
+    margin-top: -20px; }
 
 .calendar-30 .day:nth-child(1):after {
   content: "1"; }
@@ -289,6 +301,20 @@ body {
 
 .calendar-30 .day:nth-child(30):after {
   content: "30"; }
+
+.calendar-30 > div:nth-child(-n+30) {
+  display: grid;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  transition: all .5s  ease-in-out;
+  border: 1px solid black; }
+  .calendar-30 > div:nth-child(-n+30):hover {
+    cursor: pointer;
+    background-color: pink;
+    margin-top: -20px; }
 
 .calendar-31 .day:nth-child(1):after {
   content: "1"; }
@@ -382,6 +408,20 @@ body {
 
 .calendar-31 .day:nth-child(31):after {
   content: "31"; }
+
+.calendar-31 > div:nth-child(-n+31) {
+  display: grid;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  transition: all .5s  ease-in-out;
+  border: 1px solid black; }
+  .calendar-31 > div:nth-child(-n+31):hover {
+    cursor: pointer;
+    background-color: pink;
+    margin-top: -20px; }
 
 div.calendar-mon div:nth-child(1) {
   grid-column-start: 1; }
