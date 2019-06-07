@@ -47,48 +47,22 @@ body {
     margin-top: -20px;
   }
 }
-$class: day;
-$monthTues: "calendar-tue";
+$day: "day";
+$cal: "calendar-";
+$days: (mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6, sun: 7);
 
-.#{$monthTues} {
-  @for $i from 1 through 30 {
-    .#{$class} {
-      &:nth-child(#{$i + 1}) {
+  @for $i from 28 through 31 {
+    @for $k from 1 through $i {
+      .#{$cal + $i} .#{$day}:nth-child(#{$k}){
         &:after {
-          content: "#{$i}"
+          content: "#{$k}"
         }
-      }
-      &:nth-child(1) {
-
-        grid-area: 1/1/1/1;
-        border: none;
       }
     }
   }
-}
-.#{$monthTues} {
-  @for $i from 1 through 30 {
-    .#{$class} {
 
-      &:nth-child(1) {
-        cursor: none;
-        background-color: transparent;
-        margin-top: 0;
-      }
-      &:nth-child(#{$i + 1}) {
-        &:after {
-          content: "#{$i}"
-        }
-      }
-      &:nth-child(1) {
-        grid-area: 1/2/1/1;
-        border: none;
-        background-color: transparent;
-        cursor: auto;
-        margin: 0;
-      }
-
-    }
+@each $days, $number in $days {
+  div.calendar-#{$days} div:nth-child(1) {
+    grid-column-start: #{$number};
   }
-
 }
