@@ -9,7 +9,7 @@ function getFirstDayInMonth(year, month, firstDay) {
 
 function getDaysOfTheWeek(el) {
 
-  el = document.querySelector('.calendar');
+  el = document.querySelector('#month');
   return el.setAttribute("class" , "calendar calendar-" + getFirstDayInMonth());
 }
 
